@@ -10,8 +10,8 @@ WORKDIR "/app"
 
 ENV COMPOSER_ALLOW_SUPERUSER 1
 
-ENV PATH /composer/vendor/bin:${PATH}
-
 RUN composer global require symplify/easy-coding-standard:^11.2 --prefer-dist --dev
+
+ENV PATH "$PATH:$HOME/.composer/vendor/bin"
 
 ENTRYPOINT ["/entrypoint.sh"]
