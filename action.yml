@@ -1,5 +1,5 @@
-name: 'Easy Coding Standard for Shopware 6'
-description: 'Easy Coding Standard for Shopware 6'
+name: 'Easy Coding Standard GitHub Action'
+description: 'Easy Coding Standard GitHub Action'
 author: 'pietrzakadrian'
 
 branding:
@@ -7,8 +7,8 @@ branding:
   color: 'blue'
 
 inputs:
-  directory:
-    description: 'directory to check'
+  directories:
+    description: 'directories to check'
     required: true
   config:
     description: 'config file path'
@@ -18,5 +18,5 @@ runs:
   using: 'docker'
   image: 'Dockerfile'
   args:
-    - ${{ inputs.directory }}
+    - ${{ inputs.directories }}
     - ${{ inputs.config }}
