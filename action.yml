@@ -1,0 +1,11 @@
+name: 'Easy Coding Standard for Shopware 6'
+description: 'Easy Coding Standard for Shopware 6'
+author: 'pietrzakadrian'
+
+branding:
+  icon: 'check'
+  color: 'blue'
+
+runs:
+  using: 'docker'
+  image: 'Dockerfile'
