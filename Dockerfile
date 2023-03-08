@@ -6,10 +6,10 @@ COPY entrypoint.sh /entrypoint.sh
 
 RUN chmod +x /entrypoint.sh
 
-RUN composer global require symplify/easy-coding-standard:^11.2 --prefer-dist --dev
-
 WORKDIR "/app"
 
 ENV COMPOSER_ALLOW_SUPERUSER 1
+
+RUN composer global require symplify/easy-coding-standard:^11.2 --prefer-dist --dev
 
 ENTRYPOINT ["/entrypoint.sh"]
