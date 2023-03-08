@@ -6,13 +6,6 @@ branding:
   icon: 'check'
   color: 'blue'
 
-inputs:
-  args:
-    description: 'args'
-    required: true
-
 runs:
   using: 'docker'
   image: 'Dockerfile'
-  args:
-    - ${{ inputs.args }}
