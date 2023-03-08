@@ -6,7 +6,6 @@
   <component name="ChangeListManager">
     <list default="true" id="225554a8-5cdb-4263-a4c3-52c2d5f2d55a" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/Dockerfile" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/entrypoint.sh" beforeDir="false" afterPath="$PROJECT_DIR$/entrypoint.sh" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -56,7 +55,7 @@
       <option name="presentableId" value="Default" />
       <updated>1678301864266</updated>
       <workItem from="1678301865310" duration="1642000" />
-      <workItem from="1678303589239" duration="2960000" />
+      <workItem from="1678303589239" duration="3137000" />
     </task>
     <servers />
   </component>
