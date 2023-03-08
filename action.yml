@@ -6,6 +6,17 @@ branding:
   icon: 'check'
   color: 'blue'
 
+inputs:
+  config:
+    description: 'config file'
+    required: true
+  dirs:
+    description: 'directories to check'
+    required: true
+
 runs:
   using: 'docker'
   image: 'Dockerfile'
+  args:
+    - ${{ inputs.dirs }}
+    - ${{ inputs.config }}

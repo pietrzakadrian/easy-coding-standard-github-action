@@ -1,3 +1,3 @@
 #!/bin/sh -l
 
-./vendor/bin/ecs check /app/src /app/tests --clear-cache --config=/app/ecs.php
+/composer/vendor/bin/ecs check $1 --clear-cache --config=$2
