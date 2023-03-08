@@ -6,6 +6,13 @@ branding:
   icon: 'check'
   color: 'blue'
 
+inputs:
+  config:
+    description: 'config file'
+    required: true
+
 runs:
   using: 'docker'
   image: 'Dockerfile'
+  args:
+    - ${{ inputs.config }}

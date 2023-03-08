@@ -1,3 +1,3 @@
 #!/bin/sh -l
 
-/composer/vendor/bin/ecs check src tests --clear-cache --config=ecs.php
+/composer/vendor/bin/ecs check src tests --clear-cache --config=$1
