@@ -24,5 +24,5 @@ jobs:
 
 ### Reason for making
 
-- [zingimmick/ecs-action](https://github.com/marketplace/actions/easy-coding-standard-action) is deprecated, because it uses [easy-coding-standard-prefixed](https://github.com/deprecated-packages/easy-coding-standard-prefixed);
-- [Juhlinus/ecs-action](https://github.com/marketplace/actions/easy-coding-standard-github-action) and [yaraku/ecs-action](https://github.com/marketplace/actions/yaraku-easy-coding-standard-github-action) does not allow you to pass the configuration file.
+- [zingimmick/ecs-action](https://github.com/marketplace/actions/easy-coding-standard-action) is deprecated, because it uses [easy-coding-standard-prefixed](https://github.com/deprecated-packages/easy-coding-standard-prefixed).
+- [Juhlinus/ecs-action](https://github.com/marketplace/actions/easy-coding-standard-github-action) and [yaraku/ecs-action](https://github.com/marketplace/actions/yaraku-easy-coding-standard-github-action) does not allows to pass the configuration file.
