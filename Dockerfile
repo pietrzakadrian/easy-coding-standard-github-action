@@ -11,7 +11,7 @@ WORKDIR "/app"
 ENV COMPOSER_ALLOW_SUPERUSER 1
 
 RUN COMPOSER_HOME="/composer" \
-    composer global require symplify/easy-coding-standard:^11.2 --prefer-dist --dev --no-progress
+    composer global require symplify/easy-coding-standard --prefer-dist --dev --no-progress
 
 ENV PATH /composer/vendor/bin:${PATH}
 
