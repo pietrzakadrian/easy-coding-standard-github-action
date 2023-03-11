@@ -11,4 +11,6 @@ ENV COMPOSER_ALLOW_SUPERUSER 1
 RUN COMPOSER_HOME="/composer" \
     composer global require symplify/easy-coding-standard --prefer-dist --dev --no-progress
 
+ENV PATH /composer/vendor/bin:${PATH}
+
 ENTRYPOINT ["/entrypoint.sh"]
