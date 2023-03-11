@@ -16,10 +16,10 @@ jobs:
       - uses: actions/checkout@v3
 
       - name: Easy Coding Standard
-        uses: pietrzakadrian/easy-coding-standard-action@v1.0.9
+        uses: pietrzakadrian/easy-coding-standard-github-action@v1.0.10
         with:
-          directories: src tests #list of directories to check
           config: ecs.php #configuration file
+          directories: src tests #list of directories to check (optional)
 ```
 
 ### Reason for making

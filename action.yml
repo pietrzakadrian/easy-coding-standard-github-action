@@ -7,16 +7,16 @@ branding:
   color: 'blue'
 
 inputs:
-  directories:
-    description: 'directories to check'
-    required: true
   config:
     description: 'config file path'
     required: true
+  directories:
+    description: 'directories to check'
+    required: false
 
 runs:
   using: 'docker'
   image: 'Dockerfile'
   args:
-    - ${{ inputs.directories }}
     - ${{ inputs.config }}
+    - ${{ inputs.directories }}
