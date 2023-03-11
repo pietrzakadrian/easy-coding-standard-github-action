@@ -7,7 +7,6 @@ RUN chmod +x /entrypoint.sh
 
 WORKDIR "/app"
 
-ENV COMPOSER_MEMORY_LIMIT -1
 ENV COMPOSER_ALLOW_SUPERUSER 1
 ENV COMPOSER_HOME="/composer"
 
