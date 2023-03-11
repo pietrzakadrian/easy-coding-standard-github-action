@@ -5,11 +5,9 @@ COPY --from=composer:latest /usr/bin/composer /usr/bin/composer
 COPY entrypoint.sh /entrypoint.sh
 RUN chmod +x /entrypoint.sh
 
-WORKDIR "/app"
-
 ENV COMPOSER_ALLOW_SUPERUSER 1
-ENV COMPOSER_HOME="/composer"
+ENV COMPOSER_HOME "/composer"
 
-RUN composer global require symplify/easy-coding-standard --prefer-dist --dev --no-progress
+RUN composer global require symplify/easy-coding-standard:^11.2 --prefer-dist --dev --no-progress
 
 ENTRYPOINT ["/entrypoint.sh"]
