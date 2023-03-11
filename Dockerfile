@@ -8,9 +8,8 @@ RUN chmod +x /entrypoint.sh
 
 ENV COMPOSER_ALLOW_SUPERUSER 1
 
-RUN COMPOSER_HOME="/composer" \
-    composer global require symplify/easy-coding-standard --prefer-dist --dev --no-progress
+ENV COMPOSER_HOME="/composer"
 
-ENV PATH /composer/vendor/bin:${PATH}
+RUN composer global require symplify/easy-coding-standard --prefer-dist --dev --no-progress
 
 ENTRYPOINT ["/entrypoint.sh"]
