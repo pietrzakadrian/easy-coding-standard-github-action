@@ -8,6 +8,6 @@ RUN chmod +x /entrypoint.sh
 ENV COMPOSER_ALLOW_SUPERUSER 1
 ENV COMPOSER_HOME "/composer"
 
-RUN composer global require symplify/easy-coding-standard:^11 kubawerlos/php-cs-fixer-custom-fixers --prefer-dist^3 --dev --no-progress
+RUN composer global require symplify/easy-coding-standard:^11 kubawerlos/php-cs-fixer-custom-fixers:^3 --prefer-dist --dev --no-progress
 
 ENTRYPOINT ["/entrypoint.sh"]
